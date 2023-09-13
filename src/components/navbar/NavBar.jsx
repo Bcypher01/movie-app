@@ -2,14 +2,14 @@ import Image from "next/image";
 
 export const NavBar = () => {
   return (
-    <div className="w-full absolute flex px-2 lg:px-16 py-4 h-[80px]">
+    <div className="w-full absolute flex px-2 lg:px-24 py-4 h-[80px]">
       <div className="flex space-x-4 cursor-pointer">
         <Image src="/images/tv.png" alt="logo" height={50} width={50} />
         <h1 className="text-white font-semibold text-white text-[24px] pt-2 hidden sm:flex">
           MovieBox
         </h1>
       </div>
-      <div className="flex pt-2 pl-4 lg:pl-[8vw]">
+      <div className="flex pt-2 pl-4 lg:pl-[16vw]">
         <label className="relative block">
           <input
             className="appearance-none border border-white text-white rounded bg-transparent lg:w-[525px] py-2 px-3 text-gray-700 leading-tight bg-[#F2F2F2] focus:outline-none focus:shadow-outline"

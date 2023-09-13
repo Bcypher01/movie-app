@@ -2,6 +2,7 @@ import Footer from "@/components/footer/Footer";
 import { Jumbotron } from "@/components/jumbotron/Jumbotron";
 import Post from "@/components/posts/Post";
 import Image from "next/image";
+import { Suspense } from "react";
 
 export default function Home() {
   return (
@@ -28,7 +29,10 @@ export default function Home() {
           </svg>
         </span>
       </div>
-      <Post />
+      <Suspense fallback={<h1 className="text-4xl">Loading...</h1>}>
+        <Post />
+      </Suspense>
+
       <Footer />
     </main>
   );
