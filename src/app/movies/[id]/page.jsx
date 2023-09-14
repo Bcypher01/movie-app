@@ -52,9 +52,9 @@ const Posts = () => {
               <div className="flex w-full gap-2 p-4">
                 <div className="w-4/6">
                   <div className="flex">
-                    <span className="flex">
+                    <span className="md:flex">
                       <h1
-                        className="font-bold text-xl"
+                        className="font-bold md:text-xl"
                         data-testid="movie-title">
                         {data.title}{" "}
                       </h1>
@@ -83,26 +83,26 @@ const Posts = () => {
                       ))}
                     </div>
                   </div>
-                  <p className="py-6 text-lg" data-testid="movie-overview">
+                  <p className="py-6 md:text-lg" data-testid="movie-overview">
                     {data.overview}
                   </p>
 
                   <div className="space-y-6">
                     <span className="flex space-x-2">
-                      <h3 className="text-lg">Director:</h3>
-                      <h3 className="text-lg text-[#b91c1c]">
+                      <h3 className="text-sm md:text-lg">Director:</h3>
+                      <h3 className="text-sm md:text-lg text-[#b91c1c]">
                         Joseph Kosinski
                       </h3>
                     </span>
                     <span className="flex space-x-2">
-                      <h3 className="text-lg">Writers:</h3>
-                      <h3 className="text-lg text-[#b91c1c]">
+                      <h3 className="text-sm md:text-lg">Writers:</h3>
+                      <h3 className="text-sm md:text-lg text-[#b91c1c]">
                         Jim Cash, Jack Epps Jr, Peter Craig
                       </h3>
                     </span>
                     <span className="flex space-x-2">
-                      <h3 className="text-lg">Stars:</h3>
-                      <h3 className="text-lg text-[#b91c1c]">
+                      <h3 className="text-sm md:text-lg">Stars:</h3>
+                      <h3 className="text-sm md:text-lg text-[#b91c1c]">
                         Tom Cruise, Jennifer Connelly, Miles Teller
                       </h3>
                     </span>
@@ -170,7 +170,7 @@ const Posts = () => {
                     </span>
                   </div>
                   <div className="block space-y-4">
-                    <button className="flex justify-center items-center h-[55px] w-full text-white space-x-2 rounded-lg bg-[#bE123c]">
+                    <button className="flex justify-center items-center py-2 md:h-[55px] w-full text-white md:space-x-2 rounded-lg bg-[#bE123c]">
                       <svg
                         viewBox="-2 0 32 32"
                         height="16px"
@@ -205,9 +205,9 @@ const Posts = () => {
                           </g>
                         </g>
                       </svg>
-                      <h4>See Showtimes</h4>
+                      <h4 className="text-xs md:text-lg">See Showtimes</h4>
                     </button>
-                    <button className="flex justify-center items-center h-[55px] w-full text-white md:space-x-2 rounded-lg bg-[#be123c1a]">
+                    <button className="flex justify-center items-center md:h-[55px] py-4 w-full text-white md:space-x-2 rounded-lg bg-[#be123c1a]">
                       <svg
                         viewBox="0 -1 28 28"
                         height="16px"
@@ -243,7 +243,7 @@ const Posts = () => {
                           </g>
                         </g>
                       </svg>
-                      <h4 className="text-black text-sm md:text-md">
+                      <h4 className="text-black text-xs md:text-lg">
                         More watch options
                       </h4>
                     </button>
