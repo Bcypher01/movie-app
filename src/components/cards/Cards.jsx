@@ -5,7 +5,7 @@ import React from "react";
 const Cards = ({ data }) => {
   return (
     <div className="w-full md:grid md:grid-cols-4 md:gap-4 px-16">
-      {data.map((movie) => {
+      {data?.map((movie) => {
         let movieImage =
           "https://image.tmdb.org/t/p/original" + movie.poster_path;
 

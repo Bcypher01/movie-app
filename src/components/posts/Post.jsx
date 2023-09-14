@@ -17,7 +17,7 @@ const Post = () => {
       .then((response) => {
         let results = response.results;
         // get top 10 from data
-        let topTen = results.slice(0, 10);
+        let topTen = results && results.slice(0, 10);
         setData(topTen);
       })
       .catch((err) => console.error(err));

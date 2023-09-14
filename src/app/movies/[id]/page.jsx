@@ -58,14 +58,19 @@ const Posts = () => {
                         data-testid="movie-title">
                         {data.title}{" "}
                       </h1>
-                      <span className="flex mt-1">
+                      <span className="flex mt-1.5">
                         {"•"}
-                        <h1 data-testid="movie-release-date">
+                        <h1
+                          className="text-sm"
+                          data-testid="movie-release-date">
                           {" "}
-                          {date.getUTCMilliseconds()}
+                          {/* {date.getUTCMilliseconds()} */}
+                          {date.toUTCString()}
                         </h1>{" "}
                         {"•"}
-                        <h1 data-testid="movie-runtime">{data.runtime}</h1>
+                        <h1 className="text-sm" data-testid="movie-runtime">
+                          {data.runtime}
+                        </h1>
                       </span>
                     </span>
                     <div className="flex  ml-auto md:px-12 pt-1 space-x-6">
