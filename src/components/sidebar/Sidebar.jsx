@@ -4,7 +4,7 @@ import Link from "next/link";
 export const Sidebar = () => {
   return (
     // sidebar for single movie page
-    <div className="w-[226px] hidden md:block bg-white border-r rounded-r-[45px]">
+    <div className="w-[226px] hidden lg:block bg-white border-r rounded-r-[45px]">
       <Link href="/">
         <div className="flex space-x-4 px-4 items-center my-8 cursor-pointer">
           <Image src="/images/tv.png" alt="logo" height={50} width={50} />

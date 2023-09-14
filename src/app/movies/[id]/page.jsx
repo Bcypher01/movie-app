@@ -56,24 +56,24 @@ const Posts = () => {
                       <h1
                         className="font-bold md:text-xl"
                         data-testid="movie-title">
-                        {data.title}{" "}
+                        {data.title}
                       </h1>
                       <span className="flex mt-1.5">
                         {"•"}
                         <h1
-                          className="text-sm"
+                          className="text-xs md:text-sm"
                           data-testid="movie-release-date">
-                          {" "}
-                          {/* {date.getUTCMilliseconds()} */}
                           {date.toUTCString()}
-                        </h1>{" "}
+                        </h1>
                         {"•"}
-                        <h1 className="text-sm" data-testid="movie-runtime">
+                        <h1
+                          className="text-xs md:text-sm"
+                          data-testid="movie-runtime">
                           {data.runtime}
                         </h1>
                       </span>
                     </span>
-                    <div className="flex  ml-auto md:px-12 pt-1 space-x-6">
+                    <div className="flex ml-auto md:px-12 pt-1 space-x-3">
                       {genres?.map((genre) => (
                         <h4
                           className="text-sm font-semibold text-[#b91c1c]"
@@ -163,10 +163,10 @@ const Posts = () => {
                   </div>
                 </div>
 
-                <div className="w-2/6">
+                <div className="block w-2/6">
                   <div className="flex pb-4">
                     <span className="ml-auto space-x-2">
-                      <h3 className="text-lg">8.3 | 350k</h3>
+                      <h3 className="text-sm md:text-lg">8.3 | 350k</h3>
                     </span>
                   </div>
                   <div className="block space-y-4">
