@@ -1,5 +1,10 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+This app displays movies and their ratings from the IMDB site
+Functionality
+1) Search for your favorite movies
+2) View top 10 rated movies and their ratings
+
 ## Getting Started
 
 First, run the development server:
