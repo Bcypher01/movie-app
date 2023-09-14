@@ -3,6 +3,7 @@ import { NavBar } from "../navbar/NavBar";
 
 export const Jumbotron = () => {
   return (
+    // main page banner
     <div
       className="relative overflow-hidden bg-cover bg-center w-screen h-[600px] "
       style={{ backgroundImage: "url('/images/poster.png')" }}>

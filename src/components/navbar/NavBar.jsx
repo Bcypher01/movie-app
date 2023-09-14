@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Search from "../search/Search";
 
 export const NavBar = () => {
   return (
@@ -9,31 +10,7 @@ export const NavBar = () => {
           MovieBox
         </h1>
       </div>
-      <div className="flex pt-2 pl-4 lg:pl-[16vw]">
-        <label className="relative block">
-          <input
-            className="appearance-none border border-white text-white rounded bg-transparent lg:w-[525px] py-2 px-3 text-gray-700 leading-tight bg-[#F2F2F2] focus:outline-none focus:shadow-outline"
-            type="text"
-            placeholder="What do you want to watch?"
-          />
-          <span className="absolute inset-y-0 right-2 flex items-center pl-3">
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M14 14L10 10M11.3333 6.66667C11.3333 9.244 9.244 11.3333 6.66667 11.3333C4.08934 11.3333 2 9.244 2 6.66667C2 4.08934 4.08934 2 6.66667 2C9.244 2 11.3333 4.08934 11.3333 6.66667Z"
-                stroke="white"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </span>
-        </label>
-      </div>
+      <Search />
 
       <div className="flex ml-auto pt-1 text-white space-x-3">
         <h1 className="text-sm pt-2 hidden md:flex cursor-pointer">Sign In</h1>
