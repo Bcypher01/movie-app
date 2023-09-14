@@ -77,13 +77,13 @@ const Cards = ({ data }) => {
               </div>
 
               <p
-                className="text-gray-400 font-semibold py-2 text-xs uppercase"
+                className="text-gray-400 dark:text-white font-semibold py-2 text-xs uppercase"
                 data-testid="movie-release-date">
                 {movie.release_date}
               </p>
               <div className="py-2">
                 <div
-                  className="font-bold text-xl mb-2"
+                  className="font-bold  dark:text-white text-xl mb-2"
                   data-testid="movie-title">
                   {movie.title}
                 </div>
@@ -96,7 +96,7 @@ const Cards = ({ data }) => {
                       width={35}
                     />
 
-                    <p className="text-sm font-extralight tracking-wide">
+                    <p className=" dark:text-white text-sm font-extralight tracking-wide">
                       {movie.vote_average}/100
                     </p>
                   </span>
@@ -110,7 +110,7 @@ const Cards = ({ data }) => {
                     <p className="text-sm font-extralight tracking-wide">97%</p>
                   </span>
                 </div>
-                <p className="text-gray-400 py-2 text-xs">
+                <p className="dark:text-white text-gray-400 py-2 text-xs">
                   Action, Adventure, Mystery
                 </p>
               </div>
