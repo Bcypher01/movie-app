@@ -5,7 +5,7 @@ const Footer = () => {
     <>
       {/* footer */}
 
-      <footer className="bg-white py-12">
+      <footer className="bg-white dark:bg-black py-12">
         <div className="py-4 justify-center">
           <div className="flex mt-4 space-x-6 justify-center md:mt-0">
             <div>
@@ -87,17 +87,19 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex justify-center py-8 space-x-12">
-            <h3 className="text-lg font-semibold cursor-pointer">
+            <h3 className="text-lg dark:text-white font-semibold cursor-pointer">
               Condtions of use
             </h3>
-            <h3 className="text-lg font-semibold cursor-pointer">
+            <h3 className="text-lg dark:text-white font-semibold cursor-pointer">
               Privacy & Policy
             </h3>
-            <h3 className="text-lg font-semibold cursor-pointer">Press Room</h3>
+            <h3 className="text-lg dark:text-white font-semibold cursor-pointer">
+              Press Room
+            </h3>
           </div>
         </div>
         <div className="flex justify-center space-x-12">
-          <p className="text-gray-500 text-lg font-semibold">
+          <p className="text-gray-500 dark:text-white text-lg font-semibold">
             © 2021 MovieBox by Adriana Eka Prayudha
           </p>
         </div>
