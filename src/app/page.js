@@ -1,16 +1,15 @@
 import Footer from "@/components/footer/Footer";
 import { Jumbotron } from "@/components/jumbotron/Jumbotron";
 import Post from "@/components/posts/Post";
-import Image from "next/image";
 import { Suspense } from "react";
 
 export default function Home() {
   return (
     <main className="block h-screen w-screen">
       <Jumbotron />
-      <div className="flex px-16 py-8">
-        <h1 className="text-3xl font-semibold">Featured Posts</h1>
-        <span className="flex space-x-2 ml-auto">
+      <div className="flex px-8 md:px-16 py-8">
+        <h1 className="text-xl md:text-3xl font-semibold">Featured Posts</h1>
+        <span className="flex mt-1 space-x-2 ml-auto">
           <p>See more</p>
           <svg
             width="9"
