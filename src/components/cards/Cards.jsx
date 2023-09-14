@@ -78,7 +78,7 @@ const Cards = ({ data }) => {
 
               <p
                 className="text-gray-400 font-semibold py-2 text-xs uppercase"
-                data-testid="movie-release_date">
+                data-testid="movie-release-date">
                 {movie.release_date}
               </p>
               <div className="py-2">
