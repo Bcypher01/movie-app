@@ -25,7 +25,9 @@ const Post = () => {
 
   return (
     // display movie cards
-    <Cards data={data} />
+    <div className="justify-center items-center">
+      <Cards data={data} />
+    </div>
   );
 };
 

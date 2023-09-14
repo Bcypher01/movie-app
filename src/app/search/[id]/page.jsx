@@ -12,7 +12,7 @@ const SearchPage = () => {
 
   useEffect(() => {
     fetch(
-      `https://api.themoviedb.org/3/search/movie?query=${params.slug}&include_adult=false&language=en-US&page=1`,
+      `https://api.themoviedb.org/3/search/movie?query=${params.id}&include_adult=false&language=en-US&page=1`,
       Options
     )
       .then((response) => response.json())
