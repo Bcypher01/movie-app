@@ -205,7 +205,9 @@ const Posts = () => {
                           </g>
                         </g>
                       </svg>
-                      <h4 className="text-xs md:text-lg">See Showtimes</h4>
+                      <h4 className="text-xs dark:text-white md:text-lg">
+                        See Showtimes
+                      </h4>
                     </button>
                     <button className="flex justify-center items-center md:h-[55px] py-4 w-full text-white md:space-x-2 rounded-lg bg-[#be123c1a]">
                       <svg
@@ -243,7 +245,7 @@ const Posts = () => {
                           </g>
                         </g>
                       </svg>
-                      <h4 className="text-black text-xs md:text-lg">
+                      <h4 className="text-black dark:text-white text-xs md:text-lg">
                         More watch options
                       </h4>
                     </button>
