@@ -27,11 +27,11 @@ export default function Search() {
   };
 
   return (
-    <div className="flex pt-2 pl-4 lg:pl-[16vw]">
+    <div className="flex pt-2 pl-2 lg:pl-[14vw]">
       <form onSubmit={onSubmit}>
         <label className="relative block">
           <input
-            className="appearance-none border border-white text-white rounded bg-transparent lg:w-[525px] py-2 px-3 text-gray-700 leading-tight bg-[#F2F2F2] focus:outline-none focus:shadow-outline"
+            className="appearance-none border border-white text-white rounded bg-transparent w-[65vw] lg:w-[525px] py-2 px-3 text-gray-700 leading-tight bg-[#F2F2F2] focus:outline-none focus:shadow-outline"
             type="text"
             onChange={onChange}
             placeholder="What do you want to watch?"

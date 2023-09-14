@@ -3,16 +3,16 @@ import Search from "../search/Search";
 
 export const NavBar = () => {
   return (
-    <div className="w-full absolute flex px-2 lg:px-24 py-4 h-[80px]">
+    <div className="w-full absolute flex px-8 lg:px-16 py-4 h-[80px]">
       <div className="flex space-x-4 cursor-pointer">
         <Image src="/images/tv.png" alt="logo" height={50} width={50} />
-        <h1 className="text-white font-semibold text-white text-[24px] pt-2 hidden sm:flex">
+        <h1 className="text-white font-semibold text-white text-[24px] pt-2 hidden lg:flex">
           MovieBox
         </h1>
       </div>
       <Search />
 
-      <div className="flex ml-auto pt-1 text-white space-x-3">
+      <div className="flex ml-auto pt-2 text-white space-x-2">
         <h1 className="text-sm pt-2 hidden md:flex cursor-pointer">Sign In</h1>
         <svg
           width="36"
