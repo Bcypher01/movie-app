@@ -50,7 +50,7 @@ const Posts = () => {
                 style={{ backgroundImage: `url(${movieImage})` }}></div>
 
               <div className="flex w-full gap-2 p-4">
-                <div className="w-4/6">
+                <div className="w-9/12">
                   <div className="flex">
                     <span className="md:flex">
                       <h1
@@ -117,7 +117,7 @@ const Posts = () => {
                       </div>
                       <input
                         type="text"
-                        className="h-[55px] w-[90vw] md:w-[705px] pl-56 pr-20 rounded-lg z-0 border focus:shadow focus:outline-none"
+                        className="h-[55px] w-full md:w-[50vw] pl-56 pr-20 rounded-lg z-0 border focus:shadow focus:outline-none"
                         placeholder="Search anything..."
                       />
                       <div className="absolute top-3 right-3">
@@ -163,7 +163,7 @@ const Posts = () => {
                   </div>
                 </div>
 
-                <div className="block w-2/6">
+                <div className="block w-3/12">
                   <div className="flex pb-4">
                     <span className="ml-auto space-x-2">
                       <h3 className="text-sm md:text-lg">8.3 | 350k</h3>
