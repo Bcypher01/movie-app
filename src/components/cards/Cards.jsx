@@ -15,17 +15,20 @@ const Cards = ({ data }) => {
             data-testid="movie-card"
             key={movie.id}>
             <Link href={"/movies/" + movie.id}>
-              <div
-                className="relative bg-center bg-cover h-[370px]"
-                style={{
-                  backgroundImage: `url(${movie.poster_path && movieImage})`,
-                }}
-                data-testid="movie-poster">
+              <div className="relative">
+                <Image
+                  height="200"
+                  width="200"
+                  alt="poster"
+                  className="w-full h-[370px]"
+                  src={movie.poster_path && movieImage}
+                  data-testid="movie-poster"
+                />
                 <span>
                   <svg
                     width="30"
                     height="30"
-                    className="ml-auto mr-2"
+                    className="absolute top-2 right-2"
                     viewBox="0 0 30 30"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -75,7 +78,6 @@ const Cards = ({ data }) => {
                   </svg>
                 </span>
               </div>
-
               <p
                 className="text-gray-400 dark:text-white font-semibold py-2 text-xs uppercase"
                 data-testid="movie-release-date">
