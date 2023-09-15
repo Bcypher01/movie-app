@@ -97,24 +97,14 @@ const Cards = ({ data }) => {
               </Link>
               <div className="flex">
                 <span className="flex space-x-2 py-4">
-                  <Image
-                    src="/static/images/imdb.png"
-                    alt="logo"
-                    height={17}
-                    width={35}
-                  />
+                  <Image src="/imdb.png" alt="logo" height={17} width={35} />
 
                   <p className=" dark:text-white text-sm font-extralight tracking-wide">
                     {movie.vote_average}/100
                   </p>
                 </span>
                 <span className="flex space-x-2 py-4 ml-24">
-                  <Image
-                    src="/static/images/tomato.png"
-                    alt="logo"
-                    height={10}
-                    width={17}
-                  />
+                  <Image src="/tomato.png" alt="logo" height={10} width={17} />
                   <p className="text-sm font-extralight tracking-wide">97%</p>
                 </span>
               </div>
