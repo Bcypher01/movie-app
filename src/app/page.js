@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main className="block h-screen w-screen">
       <Jumbotron />
-      <div className="flex px-8 md:px-12 py-8">
+      <div className="flex px-8 md:px-16 py-8">
         <h1 className="text-xl md:text-3xl font-semibold">Featured Posts</h1>
         <span className="flex mt-1 space-x-2 ml-auto">
           <p>See more</p>
