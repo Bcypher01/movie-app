@@ -68,7 +68,7 @@ const Posts = () => {
                         {"•"}
                         <h1
                           className="text-xs md:text-sm"
-                          data-testid="movie-runtime">
+                          data-testid="movie-runtimefi">
                           {data.runtime}
                         </h1>
                       </span>
