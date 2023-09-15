@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  reactStrictMode: true,
   images: {
-    domains: ["image.tmdb.org", "movie-5rzbk315q-bcypher01.vercel.app"],
+    domains: ["image.tmdb.org"],
+    loader: "akamai",
+    path: "/",
   },
 };
 
