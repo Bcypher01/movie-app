@@ -1,20 +1,10 @@
 "use client";
-import { useCallback, useRef, useState } from "react";
-import Link from "next/link";
+import { useCallback, useState } from "react";
 import { useRouter } from "next/navigation";
 
 export default function Search() {
   const [query, setQuery] = useState("");
   const router = useRouter();
-
-  const options = {
-    method: "GET",
-    headers: {
-      accept: "application/json",
-      Authorization:
-        "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5YWM1YzdmZWE3Y2QwMDk2YzFjODAzMzMwOWFjOTM4OCIsInN1YiI6IjY1MDA4YjNmZGI0ZWQ2MTA0MzA5MjVmZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.TEyXUh-T49YkTFYozQwKSDlsmVKq8lJ7ordh1RF6ebw",
-    },
-  };
 
   const onChange = useCallback((event) => {
     const query = event.target.value;
@@ -28,7 +18,7 @@ export default function Search() {
 
   return (
     <div className="flex pt-2 pl-2 lg:pl-[14vw]">
-      <form onSubmit={onSubmit}>
+      <form type="post" onSubmit={onSubmit}>
         <label className="relative block">
           <input
             className="appearance-none border border-white text-white rounded bg-transparent w-[65vw] lg:w-[525px] py-2 px-3 text-gray-700 leading-tight bg-[#F2F2F2] focus:outline-none focus:shadow-outline"

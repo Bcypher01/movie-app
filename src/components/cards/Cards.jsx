@@ -5,10 +5,6 @@ import styles from "./card.module.css";
 
 const Cards = ({ data }) => {
   const [active, setActive] = useState(null);
-  function like(elem) {
-    // add 'active' classs to the element that was clicked
-    elem.classList.add("liked");
-  }
 
   return (
     <div className="w-full md:grid md:grid-cols-4 md:gap-4 px-16">
@@ -27,7 +23,7 @@ const Cards = ({ data }) => {
                 width="200"
                 alt="poster"
                 className="w-full h-[370px]"
-                src={movie.poster_path && movieImage}
+                src={movie && movieImage}
                 data-testid="movie-poster"
               />
               <span>

@@ -39,7 +39,7 @@ const SearchPage = () => {
           We found {results && results.length} results
         </h3>
         <div className="my-6">
-          <Cards data={results} />
+          <Cards data={results && results} />
         </div>
       </div>
     );
