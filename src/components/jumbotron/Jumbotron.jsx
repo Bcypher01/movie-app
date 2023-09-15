@@ -6,7 +6,7 @@ export const Jumbotron = () => {
     // main page banner
     <div
       className="relative overflow-hidden bg-cover bg-center w-screen h-[600px] "
-      style={{ backgroundImage: "url('/static/images/poster.png')" }}>
+      style={{ backgroundImage: "url('/poster.png')" }}>
       <NavBar />
       <div className="text-white block absolute top-32 px-8 md:px-16 md:w-5/12">
         <h1 className="text-6xl font-semibold">John Wick 3: Parabellum</h1>
