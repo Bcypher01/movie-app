@@ -253,7 +253,7 @@ const Posts = () => {
                   <div
                     className="relative overflow-hidden bg-cover bg-center w-full rounded-lg h-[229px] my-8"
                     style={{
-                      backgroundImage: "url('/images/Rectangle-sm.png')",
+                      backgroundImage: "url('/static/images/Rectangle-sm.png')",
                     }}></div>
                 </div>
               </div>

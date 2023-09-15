@@ -98,7 +98,7 @@ const Cards = ({ data }) => {
               <div className="flex">
                 <span className="flex space-x-2 py-4">
                   <Image
-                    src="/images/imdb.png"
+                    src="/static/images/imdb.png"
                     alt="logo"
                     height={17}
                     width={35}
@@ -110,7 +110,7 @@ const Cards = ({ data }) => {
                 </span>
                 <span className="flex space-x-2 py-4 ml-24">
                   <Image
-                    src="/images/tomato.png"
+                    src="/static/images/tomato.png"
                     alt="logo"
                     height={10}
                     width={17}

@@ -6,17 +6,27 @@ export const Jumbotron = () => {
     // main page banner
     <div
       className="relative overflow-hidden bg-cover bg-center w-screen h-[600px] "
-      style={{ backgroundImage: "url('/images/poster.png')" }}>
+      style={{ backgroundImage: "url('/static/images/poster.png')" }}>
       <NavBar />
       <div className="text-white block absolute top-32 px-8 md:px-16 md:w-5/12">
         <h1 className="text-6xl font-semibold">John Wick 3: Parabellum</h1>
         <div className="flex w-full space-x-4">
           <span className="flex w-6/12 space-x-2 py-4">
-            <Image src="/images/imdb.png" alt="logo" height={17} width={35} />
+            <Image
+              src="/static/images/imdb.png"
+              alt="logo"
+              height={17}
+              width={35}
+            />
             <p className="text-lg font-extralight tracking-wide">7.4/100</p>
           </span>
           <span className="flex w-6/12 space-x-2 py-4">
-            <Image src="/images/tomato.png" alt="logo" height={10} width={17} />
+            <Image
+              src="/static/images/tomato.png"
+              alt="logo"
+              height={10}
+              width={17}
+            />
             <p className="text-lg font-extralight tracking-wide">97%</p>
           </span>
         </div>
