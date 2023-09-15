@@ -5,7 +5,7 @@ export const NavBar = () => {
   return (
     <div className="w-full absolute flex px-4 lg:px-16 py-4 h-[80px]">
       <div className="flex space-x-4 cursor-pointer">
-        <Image src="/images/tv.png" alt="logo" height={50} width={50} />
+        <Image src="/static/images/tv.png" alt="logo" height={50} width={50} />
         <h1 className="text-white font-semibold text-white text-[24px] pt-2 hidden lg:flex">
           MovieBox
         </h1>
