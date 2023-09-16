@@ -28,6 +28,7 @@ const Posts = () => {
   let movieImage = "https://image.tmdb.org/t/p/original" + data.backdrop_path;
   let genres = data.genres;
   let date = new Date(data.release_date);
+  let utc = date.toUTCString();
 
   if (error) {
     return (
@@ -63,7 +64,7 @@ const Posts = () => {
                         <h1
                           className="text-xs md:text-sm"
                           data-testid="movie-release-date">
-                          {date.toUTCString()}
+                          {utc.slice(0, 16)}
                         </h1>
                         {"•"}
                         <h1
