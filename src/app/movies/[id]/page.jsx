@@ -1,6 +1,5 @@
 "use client";
 import { Sidebar } from "@/components/sidebar/Sidebar";
-// import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import { Options } from "@/components/options/Options";
 import useSWR from "swr";
