@@ -5,6 +5,8 @@ Functionality
 1) Search for your favorite movies
 2) View top 10 rated movies and their ratings
 
+Live: https://vercel.com/bcypher01/movie-app/GeU6vQgBP9DxDKSquY28gL7JgRCM
+
 ## Getting Started
 
 First, run the development server:
