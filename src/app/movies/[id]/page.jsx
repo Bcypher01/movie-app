@@ -30,7 +30,7 @@ const Posts = () => {
   }
   if (isLoading)
     return (
-      <div className="grid ml-[30%] place-items-center">
+      <div className="grid md:ml-[30%] place-items-center">
         <ContentLoader
           speed={2}
           width={1000}
